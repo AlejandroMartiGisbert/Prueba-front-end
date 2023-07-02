@@ -3,6 +3,26 @@
 .sidebar{
   background-color:#31394c;
 }
-.navigation{
-  background-color: inherit;
+.userlogin{
+  display: flex;;
+}
+.userloginelement{
+  flex: 1;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  padding-left: 5px;
+}
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.headersize{
+  height: 5.7rem;
 }

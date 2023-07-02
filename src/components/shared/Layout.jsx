@@ -6,11 +6,11 @@ import Header from './Header'
 export default function Layout()
 {
     return (
-        <div className='flex flex-row bg-neutral-100 h-screen w-screen overflow-hiden'>
+        <div className='flex flex-row bg-neutral-100 h-screen overflow-hiden'>
            <Sidebar />
-           <div className="flex-l">
-            <Header/>
-           <div className='bg-teal-200'>header</div>
+           <div className="flex-l w-full">
+                <Header/>
+                <div className='bg-teal-200'>header</div>
                 <div>{<Outlet/>}</div>
            </div>
         </div>
