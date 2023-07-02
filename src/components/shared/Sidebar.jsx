@@ -15,7 +15,7 @@ export default function Sidebar()
         <div className='flex flex-row'>
             <div className='sidebar w-20 pt-3 flex flex-col text-white'>
                 <div className='h-20 flex justify-center pt-3 pb-10 border-b border-neutral-400'>
-                    <FcMenu fontSize={30}/>
+                    <a><FcMenu fontSize={30}/></a>
                 </div>
                 <div className='flex-1'> 
                 {SIDEBAR_LINKS.map((item) => (
@@ -26,9 +26,9 @@ export default function Sidebar()
                 <div>  </div> 
             </div>
             
-            <div className='bg-white w-40 pt-3 flex flex-col text-white'>
+            <div className='subsidebar bg-white w-44 pt-3 flex flex-col text-white'>
                 <div className="h-20 flex items-center justify-center border-b border-neutral-400">
-                    <div className="text-gray-400 mx-auto">Web Interface</div>
+                    <div className="text-gray-400 mx-auto ">Web Interface</div>
                 </div>
                 <div className='flex-initial border-b border-neutral-400'> 
                     <div className="pl-8 py-5 text-gray-400 mx-auto">Dashboard</div>

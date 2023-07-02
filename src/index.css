@@ -24,5 +24,52 @@
   scrollbar-width: none;  /* Firefox */
 }
 .headersize{
-  height: 5.7rem;
+  height: 5.74rem;
+}
+
+.test {
+  width: 500px;
+  height: 500px;
+}
+
+.test-container {
+  width: 100%;
+  height: 100%;
+}
+.container1{
+  width: 100%; height: 250px; max-height: 100%;
+}
+.container2{
+  top: 0; left: 0; right: 0; bottom: 0; height: 400px;
+}
+.content
+{
+  height: 90%;
+}
+.noscrollbar::-webkit-scrollbar 
+{
+  display: none;
+}
+.noscrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+@media (max-width: 767px) 
+{
+  .subsidebar 
+  {
+    display: none;
+  }
+  .box-data{
+    overflow: scroll;
+  }
+  .hide_small_screen
+  {
+    display: none;
+  }
+  .data_tables
+  {
+    display: flex;
+    flex-direction: column;
+  }
 }
