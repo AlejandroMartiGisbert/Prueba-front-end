@@ -4,30 +4,30 @@ const cities_data = [
     {
         id: '0',
         city: 'Otawa',
-        Customers: '106'
+        customers: '106'
     },
     {
         id: '1',
         city: 'Toronto',
-        Customers: '55'
+        customers: '55'
     },{
         id: '2',
         city: 'New York',
-        Customers: '54'
+        customers: '54'
     },{
         id: '3',
         city: 'Calgary',
-        Customers: '7'
+        customers: '7'
     }
 ]
 
 function TopCities()
 {
     return (
-        <div className="w-1/3 bg-white pt-4 pb-4 rounded-sm border border-gray-200">
+        <div className="topcities w-1/3 bg-white pt-4 pb-4 rounded-sm border border-gray-200 dark:bg-slate-900 dark:border-black">
             <div className='mt-3 '>
-                <table className="w-full text-gray-700">
-                <thead className='bg-white table-auto'>
+                <table className="w-full text-gray-700 dark:text-white">
+                <thead className='bg-white table-auto dark:bg-slate-900'>
                         <tr >
                             <th >City</th>
                             <th>Customers</th>

@@ -101,8 +101,8 @@ const data = [
 function DoubleClickChart()
 {
     return (
-        <div className="w-full bg-white p-4 rounded-sm border border-grey-200 flex flex-col flex-1">
-            <strong className="text-gray-700 font-medium">Double Click Campaign Stats</strong>
+        <div className="w-full bg-white p-4 rounded-sm border border-grey-200 flex flex-col flex-1 dark:bg-slate-900 dark:border-black">
+            <strong className="text-gray-700 font-medium dark:text-white">Double Click Campaign Stats</strong>
             <div className="container1">
                 <div className="recharts-responsive-container container2">
                 <ResponsiveContainer width="100%" height="60%"> 

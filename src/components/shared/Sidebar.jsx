@@ -28,17 +28,17 @@ export default function Sidebar()
             
             <div className='subsidebar bg-white w-44 pt-3 flex flex-col text-white'>
                 <div className="h-20 flex items-center justify-center border-b border-neutral-400">
-                    <div className="text-gray-400 mx-auto ">Web Interface</div>
+                    <div className="text-gray-400 dark:text-white mx-auto ">Web Interface</div>
                 </div>
                 <div className='flex-initial border-b border-neutral-400'> 
-                    <div className="pl-8 py-5 text-gray-400 mx-auto">Dashboard</div>
+                    <div className="pl-8 py-5 text-gray-400 dark:text-white mx-auto">Dashboard</div>
                     <div className='pl-8'>
                         {WEBINTEFACE_LINKS.map((item) => (<SidebarWebInterface key={item.key} item={item} />))}
                     </div>
                 </div>
             
                 <div className='flex-1 border-b border-neutral-400 overflow-scroll scrollbar-hide'> 
-                    <div className="pl-8 py-5 text-gray-400 mx-auto">Contacts</div>
+                    <div className="pl-8 py-5 text-gray-400 dark:text-white mx-auto">Contacts</div>
                     <div className=''>
                         {CONTACTS_LINKS.map((item) => (<SIDEBAR_CONTACTS key={item.key} item={item} />))}
                     </div>

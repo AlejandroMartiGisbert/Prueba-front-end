@@ -48,10 +48,10 @@ const traffic_data = [
 function traffic()
 {
     return (
-        <div className="w-2/3 bg-white pt-4 pb-4 rounded-sm border border-gray-200">
+        <div className="traffic w-2/3 bg-white pt-4 pb-4 rounded-sm border border-gray-200 dark:bg-slate-900 dark:border-black">
             <div className='mt-3 '>
-                <table className="w-full text-gray-700">
-                <thead className='bg-white'>
+                <table className="w-full text-gray-700 dark:text-white">
+                <thead className='bg-white dark:bg-slate-900'>
                         <tr >
                             <th >Chanel</th>
                             <th>Sessions</th>

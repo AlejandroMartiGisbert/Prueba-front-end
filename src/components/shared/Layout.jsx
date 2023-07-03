@@ -6,7 +6,7 @@ import Header from './Header'
 export default function Layout()
 {
     return (
-        <div className='noscrollbar overflow-scroll flex flex-row bg-neutral-100 h-screen overflow-hiden'>
+        <div className='dark:bg-slate-800 noscrollbar overflow-scroll flex flex-row bg-neutral-100 h-screen overflow-hiden'>
            <Sidebar />
            <div className="overflow-auto h-full flex-l w-full">
                 <Header/>
