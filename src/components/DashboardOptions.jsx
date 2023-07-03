@@ -24,11 +24,9 @@ function DashboardOptions()
                     </div>
                     
                 </div>
-                <div className='pl-2 child'> 
-                </div>
                 <div className="child">
-                    <div className=' border-solid border-2 rounded-full hide_small_screen flex justify-between items-center'>
-                        <div className='text-gray-400 dark:text-white p-3'> Add Widget +</div>
+                    <div className=' hide_small_screen flex justify-between items-center'>
+                        <div className='border-solid border-2 rounded-full text-gray-400 dark:text-white p-3 ml-auto'> Add Widget +</div>
                 </div>
                 </div>
                 
