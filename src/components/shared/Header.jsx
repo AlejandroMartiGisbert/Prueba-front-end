@@ -9,10 +9,14 @@ export default function Header()
     //Funcion que recoge los datos de un usuario desde la API
     async function getRandomUser()
     {
-        const response = await fetch('https://randomuser.me/api/')
-        const data = await response.json();
-        const user = data.results[0];
-        updateUser(user)
+        try {
+            const response = await fetch('https://randomuser.me/api/')
+            const data = await response.json();
+            const user = data.results[0];
+            updateUser(user)
+        } catch(e) {
+            console.log(e);
+        }
     }
     //Funcion que actualiza el nombre y la imagen del usuario
     function updateUser(user)
@@ -38,7 +42,7 @@ export default function Header()
             <div className='hide_small_screen flex justify-between items-center'>
                 <div className='relative hide_small_screen'>
                     <HiOutlineSearch fontSize={20} className="text-gray-400 dark:text-white absolute top-1/2 -translate-y-1/2 left-3</div>"/>
-                    <input type="text" placeholder="Search messages" className="search text-sm border-none h-10 w-[24rem] dark:text-white dark:bg-slate-900"></input>
+                    <input type="text" placeholder="Search messages" className="ml-8 search text-sm border-none h-10 w-[24rem] dark:text-white dark:bg-slate-900"></input>
                 </div>
             </div>
             
@@ -48,7 +52,7 @@ export default function Header()
                         <div className='userloginelement dark:bg-slate-900'>
                         <AiFillBell fontSize={25}/>
                         </div>
-                        <button onClick={getRandomUser} className="text-white bg-slate-50 hover:bg-slate-100 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-slate-700 dark:focus:ring-grey-800 dark:bg-slate-900 dark:border-black" type="button">
+                        <button onClick={getRandomUser} className="text-white bg-slate-50 hover:bg-slate-100 font-medium text-sm px-4 py-2.5 text-center inline-flex items-center dark:hover:bg-slate-700 dark:focus:ring-grey-800 dark:bg-slate-900 dark:border-black" type="button">
                             <span className="sr-only">User Menu</span>
                             <div id="userimage" className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"style={{backgroundImage: 'url("https://source.unsplash.com/80x80?face")'}}></div>
                             <div id="username" className='text-slate-800 userloginelement '>
