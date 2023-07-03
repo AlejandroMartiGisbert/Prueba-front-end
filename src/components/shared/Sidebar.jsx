@@ -26,7 +26,7 @@ export default function Sidebar()
                 <div>  </div> 
             </div>
             
-            <div className='subsidebar bg-white w-44 pt-3 flex flex-col text-white'>
+            <div className='subsidebar bg-white w-44 pt-3 flex flex-col text-white dark:bg-slate-900'>
                 <div className="h-20 flex items-center justify-center border-b border-neutral-400">
                     <div className="text-gray-400 dark:text-white mx-auto ">Web Interface</div>
                 </div>
@@ -47,6 +47,7 @@ export default function Sidebar()
         </div>
     )
 }
+{/*Función que devuelve los elementos de la seccion de contactos */}
 function SidebarLink({item}){
     const {pathname}=useLocation();
 
@@ -61,21 +62,23 @@ function SidebarLink({item}){
         </Link>
     )
 }
+{/*Función que devuelve los elementos de la seccion de Dashboard del menu lateral */}
 function SidebarWebInterface({item}){
     const {pathname}=useLocation();
     return(
         <Link to={item.path} className={classNames(pathname === item.path ? 'bg-slate-50' : 'bg-inherit')}>
-            <div className='bg-white flex justify-left pt-2 pb-2 hover:bg-slate-200'>
-                <span className='text-slate-800 text-sm'>{item.label}</span>
+            <div className='bg-white dark:bg-slate-900 flex justify-left pt-2 pb-2 hover:bg-slate-200'>
+                <span className='text-slate-800 text-sm dark:text-white'>{item.label}</span>
             </div>
         </Link>
     )
 }
+{/*Función que devuelve los elementos de la seccion de contactos */}
 function SIDEBAR_CONTACTS({item}){
     const {pathname}=useLocation();
     return(
         <Link to={item.path} className={classNames(pathname === item.path ? 'bg-slate-50' : 'bg-inherit')}>
-            <div className='bg-white flex justify-left pt-2 pb-2 hover:bg-slate-200'>
+            <div className='bg-white dark:bg-slate-900 flex justify-left pt-2 pb-2 hover:bg-slate-200'>
                 <Menu as="div" className="relative">
                     <div className="inline-text userlogin">
                         <Menu.Button className="userloginelement ml-2 inline-flex rounded-full focus:outline-none focus:ring-2 focus:ring-neutral-400">
@@ -83,7 +86,7 @@ function SIDEBAR_CONTACTS({item}){
                             <div className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center" style={{backgroundImage: 'url("https://source.unsplash.com/80x80?face")'}}>
                             </div>
                         </Menu.Button>
-                        <div className='text-slate-800 userloginelement'>
+                        <div className='text-slate-800 userloginelement dark:text-white'>
                         {item.label}
                         </div>
                     </div>

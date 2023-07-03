@@ -16,11 +16,11 @@ function DashboardOptions()
                 </div>    
                 <div className='child pl-5'>           
                     <div className='border-solid border-2 rounded-full hide_small_screen flex justify-between items-center'>
-                        <div className='text-gray-400 dark:text-white p-3 border-r-2'> Today</div>
-                        <div className='text-gray-400 dark:text-white p-3 border-r-2'> Week</div>
-                        <div className='text-gray-400 dark:text-white p-3 border-r-2'> Month</div>
-                        <div className='text-gray-400 dark:text-white p-3 border-r-2'> Quarter</div>
-                        <div className='text-gray-400 dark:text-white p-3'> Year</div>
+                        <div className='w-full text-center text-gray-400 dark:text-white p-3 border-r-2'> Today</div>
+                        <div className='w-full text-center text-gray-400 dark:text-white p-3 border-r-2'> Week</div>
+                        <div className='w-full text-center text-gray-400 dark:text-white p-3 border-r-2'> Month</div>
+                        <div className='w-full text-center text-gray-400 dark:text-white p-3 border-r-2'> Quarter</div>
+                        <div className='w-full text-center text-gray-400 dark:text-white p-3'> Year</div>
                     </div>
                     
                 </div>

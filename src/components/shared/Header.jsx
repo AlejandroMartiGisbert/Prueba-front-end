@@ -3,9 +3,10 @@ import {HiOutlineSearch} from 'react-icons/hi'
 import {Link} from 'react-router-dom'
 import {Menu} from '@headlessui/react'
 import {AiFillBell} from 'react-icons/ai'
+
 export default function Header()
 {
-    
+    //Funcion que recoge los datos de un usuario desde la API
     async function getRandomUser()
     {
         const response = await fetch('https://randomuser.me/api/')
@@ -13,6 +14,7 @@ export default function Header()
         const user = data.results[0];
         updateUser(user)
     }
+    //Funcion que actualiza el nombre y la imagen del usuario
     function updateUser(user)
     {
         const name = document.getElementById('username');
@@ -36,7 +38,7 @@ export default function Header()
             <div className='hide_small_screen flex justify-between items-center'>
                 <div className='relative hide_small_screen'>
                     <HiOutlineSearch fontSize={20} className="text-gray-400 dark:text-white absolute top-1/2 -translate-y-1/2 left-3</div>"/>
-                    <input className='search' type="text" placeholder="Search messages" className="text-sm border-none h-10 w-[24rem]"></input>
+                    <input type="text" placeholder="Search messages" className="search text-sm border-none h-10 w-[24rem] dark:text-white dark:bg-slate-900"></input>
                 </div>
             </div>
             

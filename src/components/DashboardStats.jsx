@@ -16,6 +16,7 @@ function DashboardStats()
 }
 export default DashboardStats
 
+{/*Función que forma un elemento reutilizable con las clases ya añadidas */}
 function BoxElement({children}){
     return  <div className="h-5/6 w-5/6  bg-white rounded-sm p-4 flex-1 border border-gray-200 flex items-center justify-center flex-col dark:bg-slate-900 dark:border-black">{children}</div>
 }
